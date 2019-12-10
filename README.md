@@ -1,8 +1,8 @@
 This project is for the carousel implementation using react.
 
 ## Carousel in React
+<br\>
 
-<br />
 ![](recording.gif)
 
 
@@ -88,7 +88,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 
-###`git clone https://github.com/akhiltambi/carousel.git`
+### `git clone https://github.com/akhiltambi/carousel.git`
 
 Clones the carousel project. 
 
