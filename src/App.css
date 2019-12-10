@@ -12,6 +12,7 @@
   height: 250px;
 }
 
+.info,
 .author,
 .source {
   font-family: 'Roboto', arial, sans-serif;

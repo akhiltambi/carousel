@@ -25,7 +25,7 @@ function App() {
                 alt={item.info + ', ' + item.source} />
               <Carousel.Caption>
                 <p>
-                  <strong className="author">{item.info}</strong>
+                  <strong className="info">{item.info}</strong>
                   {" "}
                   <small className="source">{item.source}</small>
                 </p>
@@ -49,7 +49,7 @@ function App() {
                 alt={item.info + ', ' + item.source} />
               <Carousel.Caption>
                 <p>
-                  <strong className="author">{item.info}</strong>
+                  <strong className="info">{item.info}</strong>
                   {" "}
                   <small className="source">{item.source}</small>
                 </p>
@@ -76,7 +76,7 @@ function App() {
                 alt={item.info + ', ' + item.source} />
               <Carousel.Caption>
                 <p>
-                  <strong className="author">{item.info}</strong>
+                  <strong className="info">{item.info}</strong>
                   {" "}
                   <small className="source">{item.source}</small>
                 </p>
@@ -101,7 +101,7 @@ function App() {
                 alt={item.info + ', ' + item.source} />
               <Carousel.Caption>
                 <p>
-                  <strong className="author">{item.info}</strong>
+                  <strong className="info">{item.info}</strong>
                   {" "}
                   <small className="source">{item.source}</small>
                 </p>

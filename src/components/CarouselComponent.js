@@ -142,8 +142,7 @@ class Carousel extends Component {
 
   goToSlide(index) {
     this.setState({
-      activeIndex: index,
-      by: 'jump'
+      activeIndex: index
     });
   }
 
@@ -152,17 +151,16 @@ class Carousel extends Component {
 
     let index = this.state.activeIndex;
     let { children } = this.props;
-    let slidesLength = children.length;
+    let childrenLength = children.length;
 
     if (index < 1) {
-      index = slidesLength;
+      index = childrenLength;
     }
 
     --index;
 
     this.setState({
-      activeIndex: index,
-      by: 'prev'
+      activeIndex: index
     });
   }
 
@@ -171,17 +169,16 @@ class Carousel extends Component {
 
     let index = this.state.activeIndex;
     let { children } = this.props;
-    let slidesLength = children.length - 1;
+    let childrenLength = children.length - 1;
 
-    if (index >= slidesLength) {
+    if (index >= childrenLength) {
       index = -1;
     }
 
     ++index;
 
     this.setState({
-      activeIndex: index,
-      by: 'next'
+      activeIndex: index
     });
   }
 
