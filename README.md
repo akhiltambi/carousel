@@ -1,3 +1,52 @@
+This project is for the carousel creation using react.
+
+The carousel logic is implemented in the file ``src/components/CarouselComponent.js``
+Sample use of this library is shown in ``src/components/CarouselComponent.js``
+
+Following is the piece of code snip to show how to use this library.
+```javascript
+import React from 'react';
+import Carousel from './components/CarouselComponent';
+import './App.css';
+
+function App() {
+    return (
+        <Carousel className="height"
+          wrap={true}
+          autoplay={true}
+          controls={true}
+          slideshowSpeed={4000}
+          defaultActiveIndex={3}
+          pauseOnHover={true}
+          indicators={true}
+        >
+            <Carousel.Item className="your-class-for-item">
+                <img src={'/image-source.jpg'}
+                alt={'alt'} />
+                <Carousel.Caption>
+                <p>{'caption for the image'}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item className="your-class-for-item">
+                <p>{'your text for the slide'}</p>
+                <Carousel.Caption>
+                <p>{'caption for the text'}</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            
+            {/* ... more items */}
+        </Carousel>
+    );
+}
+
+export default App;
+```
+
+![](recording.gif)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
