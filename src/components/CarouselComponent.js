@@ -118,8 +118,8 @@ class Carousel extends Component {
   static defaultProps = {
     indicators: true,
     controls: true,
-    slideshowSpeed: 400,
-    defaultActiveIndex: 5,
+    slideshowSpeed: 4000,
+    defaultActiveIndex: 0,
     wrap: true,
     autoplay: true,
     children: [],

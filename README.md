@@ -1,9 +1,16 @@
-This project is for the carousel creation using react.
+This project is for the carousel implementation using react.
 
-The carousel logic is implemented in the file ``src/components/CarouselComponent.js``
-Sample use of this library is shown in ``src/components/CarouselComponent.js``
+## Carousel in React
 
-Following is the piece of code snip to show how to use this library.
+![](recording.gif)
+
+The logic of carousel implementation is present in CarouselComponent.js:
+``src/components/CarouselComponent.js``
+
+Some sample use of this component are given in 
+``src/App.js``
+
+Following is sample piece of code snip to show how to use the carousel component.
 ```javascript
 import React from 'react';
 import Carousel from './components/CarouselComponent';
@@ -12,13 +19,13 @@ import './App.css';
 function App() {
     return (
         <Carousel className="height"
-          wrap={true}
           autoplay={true}
-          controls={true}
           slideshowSpeed={4000}
-          defaultActiveIndex={3}
           pauseOnHover={true}
+          controls={true}
           indicators={true}
+          wrap={true}
+          defaultActiveIndex={3}
         >
             <Carousel.Item className="your-class-for-item">
                 <img src={'/image-source.jpg'}
@@ -43,13 +50,43 @@ function App() {
 export default App;
 ```
 
-![](recording.gif)
+Component accepts following props:
+1) ``className`` (type: string, default: empty string) 
+Description: This prop can be used to apply any other css class. Accepts space separated cass classes.
+
+2) ``autoplay `` (type: boolean, default: true)
+    - This prop can be used to enable or diable autoplay of the slides.
+
+3) ``slideshowSpeed`` (type: number, default: 4000 (ms))
+    - This prop can be used to adjust the speed of slideshow. Accepts value in ms. If set to 0, autoplay will stop.
+
+4) ``pauseOnHover`` (type: boolean, default: true)
+    - This prop can be used to pause on hover of slide in autoplay. It will work only when ``autoplay=true``
+
+5) ``controls`` (type: boolean, default: true)  
+    - This prop can be used to hide/unhide left-right controls.
+
+6) ``indicators`` (type: boolean, default: true)  
+    - This prop can be used to hide/unhide indicators, which can be used to navigate to particular slide.
+
+7) ``wrap`` (type: boolean, default: true)
+    - This prop can be used to whether enable or disable the slide show in circular motion. Note, if autoplay=true, slide show will go in circular but left and right arrows will be disabled.
+
+8) ``defaultActiveIndex`` (type: number, default: 0)
+    - This prop can be used to set the slide show start from a particular slide.
 
 
+## Installation information:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+You may clone the directory using ``git clone https://github.com/akhiltambi/carousel.git`` command in cmd prompt/terminal. 
+
+After go inside the project directory and run
+
+### `yarn install`
 
 In the project directory, you can run:
 
