@@ -1,18 +1,18 @@
 This project is for the carousel implementation using react.
 
 ## Carousel in React
-<br\>
+<br />
 
 ![](recording.gif)
 
 
-The logic of carousel implementation is present in CarouselComponent.js:
+The logic of carousel implementation is present in CarouselComponent located at:
 ``src/components/CarouselComponent.js``
 
-Some sample use of this component are given in 
+Some sample use of this component are given in: 
 ``src/App.js``
 
-Following is sample piece of code snip to show how to use the carousel component.
+Following is sample piece of code snip to show how to use the carousel component:
 
 ```javascript
 import React from 'react';
