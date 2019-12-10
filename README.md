@@ -2,7 +2,9 @@ This project is for the carousel implementation using react.
 
 ## Carousel in React
 
+
 ![](recording.gif)
+
 
 The logic of carousel implementation is present in CarouselComponent.js:
 ``src/components/CarouselComponent.js``
@@ -50,7 +52,8 @@ function App() {
 export default App;
 ```
 
-Component accepts following props:
+Caoursel Component accepts following props:
+
 1) ``className`` (type: string, default: empty string) 
     - This prop can be used to apply any other css class. Accepts space separated cass classes.
 
@@ -74,6 +77,7 @@ Component accepts following props:
 
 8) ``defaultActiveIndex`` (type: number, default: 0)
     - This prop can be used to set the slide show start from a particular slide.
+
 
 
 ## Installation information:
