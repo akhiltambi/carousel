@@ -226,7 +226,13 @@ class Carousel extends Component {
       indicators,
       className
     } = this.props;
-
+    if(!children || children.length === 0) {
+      return (
+        <div className={`carousel ${className || ''}`}>
+          <strong>No slides to display.</strong>
+        </div>
+      )
+    }
     let leftControl = <></>;
     let rightControl = <></>;
 

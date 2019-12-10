@@ -21,12 +21,14 @@
 
 /* Carousel slides */
 .carousel-slide {
-  padding-left: 2px;
-  padding-right: 2px;
+  /* padding-left: 2px; */
+  /* padding-right: 2px; */
   display: none;
   width: 80%;
   list-style-type: none;
   text-align: center;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
 .carousel-slide.carousel-slide-prev,

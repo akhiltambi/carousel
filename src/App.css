@@ -3,13 +3,13 @@
   padding: 20px;
 }
 
-.img img {
+.adjust-content-height img, .img p {
   height: 75%;
   width: 100%;
 }
 
 .height {
-  height: 300px;
+  height: 250px;
 }
 
 .author,
@@ -21,4 +21,8 @@
 .source {
   font-style: italic;
   color: #888;
+}
+.half-width {
+  width:50%;
+  margin: 5px;
 }
