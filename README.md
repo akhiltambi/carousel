@@ -52,7 +52,7 @@ export default App;
 
 Component accepts following props:
 1) ``className`` (type: string, default: empty string) 
-Description: This prop can be used to apply any other css class. Accepts space separated cass classes.
+    - This prop can be used to apply any other css class. Accepts space separated cass classes.
 
 2) ``autoplay `` (type: boolean, default: true)
     - This prop can be used to enable or diable autoplay of the slides.
