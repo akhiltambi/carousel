@@ -2,7 +2,7 @@ This project is for the carousel implementation using react.
 
 ## Carousel in React
 
-
+<br />
 ![](recording.gif)
 
 
@@ -13,6 +13,7 @@ Some sample use of this component are given in
 ``src/App.js``
 
 Following is sample piece of code snip to show how to use the carousel component.
+
 ```javascript
 import React from 'react';
 import Carousel from './components/CarouselComponent';
@@ -77,7 +78,7 @@ Caoursel Component accepts following props:
 
 8) ``defaultActiveIndex`` (type: number, default: 0)
     - This prop can be used to set the slide show start from a particular slide.
-
+<br />
 
 
 ## Installation information:
@@ -86,11 +87,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-You may clone the directory using ``git clone https://github.com/akhiltambi/carousel.git`` command in cmd prompt/terminal. 
 
-After go inside the project directory and run
+###`git clone https://github.com/akhiltambi/carousel.git`
+
+Clones the carousel project. 
+
+After that go inside the project directory and run
 
 ### `yarn install`
+
+Downloads all dependencies.
 
 In the project directory, you can run:
 
