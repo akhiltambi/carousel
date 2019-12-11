@@ -1,6 +1,5 @@
 import React from 'react';
 import { CarouselSlidesData } from './shared/CarouselSlidesData';
-// import CarouselSandbox from './components/CarouselSandboxComponent';
 import Carousel from './components/CarouselComponent';
 import './App.css';
 

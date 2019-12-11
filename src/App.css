@@ -3,7 +3,7 @@
   padding: 20px;
 }
 
-.adjust-content-height img, .img p {
+.adjust-content-height img, .adjust-content-height p {
   height: 75%;
   width: 100%;
 }

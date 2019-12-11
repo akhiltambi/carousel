@@ -51,22 +51,12 @@ class CarouselSlide extends Component {
     const { children } = this.props;
 
     const createItem = (child, index) => {
-      const isActive = index === this.props.activeIndex;
-      const isPrev = index === (this.props.activeIndex - 1);
-      const isNext = index === (this.props.activeIndex + 1);
       let rowClass = "carousel-slide";
-      if (isActive) {
-        rowClass += " carousel-slide-active"
-      } else if (isPrev) {
-        rowClass += " carousel-slide-prev"
-      } else if (isNext) {
-        rowClass += " carousel-slide-next"
-      }
       return (
-        <li key={index}
+        <div key={index}
           className={rowClass}>
           {child}
-        </li>
+        </div>
       );
     };
 
@@ -74,20 +64,12 @@ class CarouselSlide extends Component {
       return createItem(child, index);
     });
 
-    // if (!(children.length === 1 || children.length === 2)) {
-    //   processedItems = (
-    //   <>
-    //     {createItem(children[children.length - 1], -1)}
-    //     {processedItems}
-    //     {createItem(children[0], children.length)}
-    //   </>
-    //   );
-    // }
-
     return (
-      <ul className="carousel-slides">
+      <div className="carousel-slides">
+        <div className="carousel-slide-dummy"></div>
         {processedItems}
-      </ul>
+        <div className="carousel-slide-dummy"></div>
+      </div>
     );
   }
 }
@@ -127,6 +109,8 @@ class Carousel extends Component {
     pauseOnHover: true
   };
 
+  carousel = React.createRef();
+
   constructor(props) {
     super(props);
 
@@ -140,7 +124,27 @@ class Carousel extends Component {
 
   }
 
+  scrollTo(index) {
+    let elem = this.carousel.current.querySelector('.carousel-slides');
+    let children = elem.children;
+    elem.scrollTo({
+      top: 0,
+      left: children[index+1].offsetLeft - children[0].offsetWidth,
+      behavior: 'smooth'
+    });
+    // scrollIntoView flickers the screen if more than 2-3 carousels on autoplay, when animation happens. 
+    // As it tries to bring that element in view.
+    // this.carousel.current.querySelector('.carousel-slides').children[index+1].scrollIntoView({
+    //   behaviour: 'smooth',
+    //   // block: 'center',
+    //   inline: 'center'
+    // });
+  }
+
   goToSlide(index) {
+    
+    this.scrollTo(index);
+
     this.setState({
       activeIndex: index
     });
@@ -158,7 +162,9 @@ class Carousel extends Component {
     }
 
     --index;
-
+    
+    this.scrollTo(index);
+    
     this.setState({
       activeIndex: index
     });
@@ -176,7 +182,9 @@ class Carousel extends Component {
     }
 
     ++index;
-
+    
+    this.scrollTo(index);
+    
     this.setState({
       activeIndex: index
     });
@@ -212,6 +220,7 @@ class Carousel extends Component {
   };
 
   componentDidMount() {
+    this.goToSlide(this.state.activeIndex);
     this.autoplay();
   }
 
@@ -252,7 +261,8 @@ class Carousel extends Component {
     return (
       <div className={`carousel ${className || ''}`}
         onMouseOver={this.handleMouseOver}
-        onMouseOut={this.handleMouseOut}>
+        onMouseOut={this.handleMouseOut}
+        ref={this.carousel}>
         {leftControl}
         {rightControl}
         <CarouselSlide
