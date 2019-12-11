@@ -3,7 +3,7 @@ This project is for the carousel implementation using react.
 ## Carousel in React
 <br />
 
-![](recording.gif)
+![](recording_2.gif)
 
 
 The logic of carousel implementation is present in CarouselComponent located at:
