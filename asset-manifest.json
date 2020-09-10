@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/carousel/static/css/main.a0cd1e7f.chunk.css",
+    "main.js": "/carousel/static/js/main.d38d84fd.chunk.js",
+    "main.js.map": "/carousel/static/js/main.d38d84fd.chunk.js.map",
+    "runtime-main.js": "/carousel/static/js/runtime-main.596077f8.js",
+    "runtime-main.js.map": "/carousel/static/js/runtime-main.596077f8.js.map",
+    "static/css/2.702c6a11.chunk.css": "/carousel/static/css/2.702c6a11.chunk.css",
+    "static/js/2.d840fcba.chunk.js": "/carousel/static/js/2.d840fcba.chunk.js",
+    "static/js/2.d840fcba.chunk.js.map": "/carousel/static/js/2.d840fcba.chunk.js.map",
+    "index.html": "/carousel/index.html",
+    "precache-manifest.0aa650515d828c7f3ba5c66019ff49eb.js": "/carousel/precache-manifest.0aa650515d828c7f3ba5c66019ff49eb.js",
+    "service-worker.js": "/carousel/service-worker.js",
+    "static/css/2.702c6a11.chunk.css.map": "/carousel/static/css/2.702c6a11.chunk.css.map",
+    "static/css/main.a0cd1e7f.chunk.css.map": "/carousel/static/css/main.a0cd1e7f.chunk.css.map",
+    "static/js/2.d840fcba.chunk.js.LICENSE": "/carousel/static/js/2.d840fcba.chunk.js.LICENSE",
+    "static/media/font-awesome.min.css": "/carousel/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.596077f8.js",
+    "static/css/2.702c6a11.chunk.css",
+    "static/js/2.d840fcba.chunk.js",
+    "static/css/main.a0cd1e7f.chunk.css",
+    "static/js/main.d38d84fd.chunk.js"
+  ]
+}
